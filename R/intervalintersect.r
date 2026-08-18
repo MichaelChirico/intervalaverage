@@ -52,6 +52,7 @@
 #' for how naming conflicts are dealt with.
 #' @seealso \code{\link{is.overlapping}} To test if a table contains overlapping intervals within values of \code{group_vars}
 #' @examples
+#' library(data.table)
 #'set.seed(42)
 #'y <- data.table(addr_id=c(1,2,2,3,5),
 #'ppt_id=c(1,1,1,2,2),

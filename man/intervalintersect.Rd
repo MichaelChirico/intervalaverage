@@ -72,6 +72,7 @@ Note that the function returns the same result if you switch x and y
 (with the exception of switched column names in the case of column name conflicts as just discussed)
 }
 \examples{
+library(data.table)
 set.seed(42)
 y <- data.table(addr_id=c(1,2,2,3,5),
 ppt_id=c(1,1,1,2,2),

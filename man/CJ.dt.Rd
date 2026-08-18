@@ -20,6 +20,7 @@ CJ.dt computes successive cartesian join over rows of each table
 paying no attention to whatever the tables are keyed on.
 }
 \examples{
+library(data.table)
 #' CJ.dt(data.table(c(1,2,2),c(1,1,1)),data.table(c("a","b"),c("c","d")))
 #If you want to expand x to unique values of a non-unique columns in y
 x <- data.table(c(1,2,3),c("a","b","b"))

@@ -133,6 +133,7 @@ does not affect whether the average value is returned as NA or not--you'll need 
 criteria using this (these) maxgap variables.
 }
 \examples{
+library(data.table)
 x <- data.table(start=seq(1L,by=7L,length=6),
                end=seq(7L,by=7L,length=6),
                pm25=c(10,12,8,14,22,18))

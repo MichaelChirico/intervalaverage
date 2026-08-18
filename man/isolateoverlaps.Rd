@@ -50,6 +50,7 @@ x is not copied but rather passed by reference to function internals
 but the order of this data.tables is restored on function completion or error.
 }
 \examples{
+library(data.table)
 set.seed(23)
 x2 <- data.table(addr_id=rep(1:4,each=3),
                 exposure_start=rep(c(1L,7L,14L),times=4),

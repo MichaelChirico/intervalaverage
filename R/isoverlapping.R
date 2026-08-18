@@ -34,6 +34,7 @@
 #' will result in TRUE)
 #'
 #' @examples
+#' library(data.table)
 #' x <- data.table(start=c(1L,2L),end=c(3L,4L))
 #' is.overlapping(x,c("start","end")) #the interval 1,3 overlaps with the interval 2,4
 #'

@@ -25,6 +25,7 @@ create_unused_name <- function(x,reserved_cols){
 #' @param groups a character vector corresponding to
 #' column names of grouping vars in all of the data.tables
 #' @examples
+#' library(data.table)
 #' #' CJ.dt(data.table(c(1,2,2),c(1,1,1)),data.table(c("a","b"),c("c","d")))
 #' #If you want to expand x to unique values of a non-unique columns in y
 #' x <- data.table(c(1,2,3),c("a","b","b"))
@@ -32,7 +33,7 @@ create_unused_name <- function(x,reserved_cols){
 #' z <- CJ.dt(x, y[,list(id=unique(id))])
 #' #if you want to merge this back to y
 #' y[z,on="id",allow.cartesian=TRUE] #or z[y,on="id",allow.cartesian=TRUE]
-#' @import data.table
+#' @importFrom data.table := .EACHI .SD as.data.table as.IDate copy data.table fifelse foverlaps is.data.table key melt rbindlist rleid set setcolorder setindex setkey setkeyv setnames setorder setorderv shift
 #' @export
 CJ.dt <- function(...,groups=NULL) {
   l = list(...)
@@ -186,6 +187,7 @@ CJ.dt <- function(...,groups=NULL) {
 #'  concurrent run of times (or whatever the units of intervals are) for which that value variable is missing
 #'  (either structurally missing ie--no intervals at all in x--or missing with an NA or any combination thereof).
 #' @examples
+#' library(data.table)
 #'x <- data.table(start=seq(1L,by=7L,length=6),
 #'                end=seq(7L,by=7L,length=6),
 #'                pm25=c(10,12,8,14,22,18))
@@ -741,6 +743,7 @@ interval_weighted_avg_slow_f <- function(x,
 #'  values of \code{group_vars}
 #'
 #' @examples
+#' library(data.table)
 #'set.seed(23)
 #'x2 <- data.table(addr_id=rep(1:4,each=3),
 #'                 exposure_start=rep(c(1L,7L,14L),times=4),

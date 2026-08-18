@@ -46,6 +46,7 @@ will join them all--this is unnecessarily slow and memory intensive if the goal
 is to just test for the existence of one or more overlap.
 }
 \examples{
+library(data.table)
 x <- data.table(start=c(1L,2L),end=c(3L,4L))
 is.overlapping(x,c("start","end")) #the interval 1,3 overlaps with the interval 2,4
 

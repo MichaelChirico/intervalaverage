@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 
 ```{r setup,echo=FALSE,message=FALSE}
 library(intervalaverage)
+library(data.table)
 ```
 
 *Note: This package and vignette makes extensive use of `data.table`. If
@@ -61,6 +62,7 @@ We will use two data sets (included in this package) to demonstrate
 
 ```{r}
 library(intervalaverage)
+library(data.table)
 data("no2")
 data("address_history")
 setDT(no2) 

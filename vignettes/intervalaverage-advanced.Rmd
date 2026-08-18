@@ -20,6 +20,7 @@ knitr::opts_chunk$set(
 
 ```{r setup,echo=FALSE,message=FALSE}
 library(intervalaverage)
+library(data.table)
 set.seed(1)
 ```
 
